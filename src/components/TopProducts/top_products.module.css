@@ -1,0 +1,86 @@
+.top_products {
+	width: 100%;
+	max-width: 36rem;
+	max-height: 23rem;
+	height: 100%;
+	z-index: 2;
+}
+
+.product_list {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto;
+	height: calc(23rem - 3rem);
+}
+.product_title {
+	grid-column: span 1;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.product_name {
+	grid-column: span 2;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+}
+
+.product_poularity {
+	grid-column: span 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.product_sales {
+	grid-column: span 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.progress {
+	position: relative;
+	height: 15px;
+	width: 95%;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.progress > span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progressBar {
+	height: 100%;
+	width: 100%;
+	background-color: #00c251;
+	color: #fff;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.top_products {
+		min-height: 15rem;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.product_list {
+		min-width: 600px; /* Force minimum width to trigger scroll */
+		padding-bottom: 0.5rem;
+	}
+}

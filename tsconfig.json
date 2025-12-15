@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@/Components/*": ["src/components/*"],
+			"@/Context/*": ["src/Context/*"],
+			"@/Hooks/*": ["src/Hooks/*"],
+			"@/Pages/*": ["src/Pages/*"],
+			"@/Router/*": ["src/Router/*"],
+			"@/animations/*": ["src/animations/*"],
+			"@/utils/*": ["src/utils/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}

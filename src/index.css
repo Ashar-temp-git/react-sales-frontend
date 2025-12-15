@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+	--black-color: #1d1e2c;
+	--blue-color: #5d5fef;
+	--blue-bar: #0095ff;
+	--purple-color: #387adf;
+	--peach-color: #cebacf;
+	--green-color: #b8e0d2;
+	--green-bar: #00e096;
+	--white-color: #fafbfc;
+	font-family: "poopins", Tahoma, "Geneva", Verdana, sans-serif;
+	--border-radius: 8px;
+	--transition: all 0.3s ease;
+}

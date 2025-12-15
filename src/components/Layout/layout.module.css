@@ -1,0 +1,73 @@
+.home_main {
+	display: grid;
+	grid-template-areas:
+		"top top"
+		"nav content";
+	grid-template-rows: auto 1fr;
+	grid-template-columns: auto 1fr;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.topBar {
+	grid-area: top;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+}
+
+.navBar {
+	grid-area: nav;
+	z-index: 5;
+	left: 0;
+	position: fixed;
+	height: 100vh;
+	padding-top: 2.5rem;
+}
+
+.content {
+	grid-area: content;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: relative;
+	scroll-behavior: smooth;
+	width: auto;
+	margin-left: 9rem;
+	margin-top: 4.5rem;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+/* Desktop: ensure minimal confusion, though grid handles it inherently */
+@media (min-width: 768px) {
+	/* Grid layout is default above */
+}
+
+/* Mobile: < 768px - Stack layout */
+@media (max-width: 767px) {
+	.home_main {
+		grid-template-areas:
+			"top"
+			"content";
+		grid-template-rows: auto 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.navBar {
+		display: block;
+		position: static;
+		width: 0;
+		height: 0;
+		padding: 0;
+		z-index: auto;
+	}
+
+	.content {
+		margin-left: 0;
+		margin-top: 5rem;
+	}
+}

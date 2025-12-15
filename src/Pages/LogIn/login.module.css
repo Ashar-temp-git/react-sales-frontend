@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1150px) {
+	.container {
+		min-height: 100vh;
+	}
+	.form_container {
+		width: 100%;
+		height: 100%;
+		padding: 0 0.25rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-shrink: 0;
+		overflow-x: hidden;
+	}
+	.title_h1 {
+		font-size: 3rem;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.title_h1 {
+		font-size: 13vw;
+	}
+}
+.error {
+	font-weight: 400;
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+.form_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+}
+.title {
+	width: 100%;
+	height: 20rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.h1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.title_h1 {
+	font-family: "Poppins";
+	font-size: 6rem;
+	font-weight: 600;
+	line-height: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+.title h1:nth-child(1) {
+	position: absolute;
+	color: transparent;
+	-webkit-text-stroke: 2px var(--purple-color);
+}
+
+.title h1:nth-child(2) {
+	animation: animate 4s ease-in-out infinite;
+}
+.title_span {
+	font-family: "apple-system";
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+	stroke-linejoin: round;
+	padding: 0.25rem;
+}
+
+.main_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	flex-shrink: 0;
+	width: 26rem;
+	height: 30rem;
+	padding: 0.5rem 1rem;
+	border-radius: var(--border-radius);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+	font-family: "Poppins";
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	height: 75%;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+.form input:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+.form_lable {
+	font-family: "Poppins";
+	font-weight: 300;
+	line-height: 1;
+}
+.form input {
+	height: 3rem;
+	text-decoration: none;
+	border: none;
+	outline: offset 1px;
+	border-radius: 0.5rem;
+	margin: 0.4rem 0rem;
+	width: 100%;
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	font-size: 1rem;
+	transition: var(--transition);
+}
+.btn {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 300;
+}
+.btn:hover {
+	background: radial-gradient(circle, transparent 2%, 1%) center/15000%;
+}
+.btn:active {
+	background-size: 100%;
+	transition: background 0.5s;
+	top: 3px;
+}
+.line {
+	width: 15rem;
+	margin: 0.2rem;
+}
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}

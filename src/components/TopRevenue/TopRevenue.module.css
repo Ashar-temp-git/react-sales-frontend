@@ -1,0 +1,22 @@
+.chart {
+	width: 100%;
+	max-width: 36rem;
+	min-height: 21rem;
+	height: 19rem;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+	.chart {
+		min-height: auto;
+		height: auto;
+		padding-bottom: 1rem;
+	}
+
+	.barChart {
+		min-height: 250px;
+		height: 250px;
+		width: 100%;
+	}
+}

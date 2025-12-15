@@ -1,0 +1,33 @@
+.main_container {
+	width: 100%;
+	min-height: 23rem;
+	height: 23rem;
+	z-index: 1;
+	box-sizing: border-box;
+}
+.bar {
+	height: 16rem;
+}
+
+.legend {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 2rem;
+}
+
+.last_month,
+.this_month {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.main_container {
+		min-height: 12rem;
+		width: 100%;
+	}
+}
