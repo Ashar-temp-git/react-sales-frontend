@@ -78,10 +78,12 @@ const AuthContextProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 			console.error("Failed to load userId from local storage", error);
 		}
 	}, []);
+	const API = process.env.REACT_APP_API_URL || "";
+
 	const logIn = async (credentials: any) => {
 		const { email, password } = credentials;
 		try {
-			const response = await fetch("http://localhost:8080/api/users/login", {
+			const response = await fetch(`${API}/api/users/login`, {
 				method: "POST",
 				headers: {
 					"Content-type": "application/json",
@@ -112,7 +114,7 @@ const AuthContextProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 	const signUp = async (credentials: any) => {
 		const { username, email, password } = credentials;
 		try {
-			const response = await fetch("http://localhost:8080/api/users/signup", {
+			const response = await fetch(`${API}/api/users/signup`, {
 				method: "POST",
 				headers: { "Content-type": "application/json" },
 				body: JSON.stringify({ username, email, password }),
