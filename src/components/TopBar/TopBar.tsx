@@ -19,7 +19,7 @@ const TopBar: React.FC<TopBarProps> = ({ onMenuClick }) => {
 	const { theme, toggleTheme } = useTheme();
 
 	return (
-		<nav className={`${classes.main_container} bg-slate-50 dark:bg-slate-900 rounded-xl shadow`}>
+		<nav className={`${classes.main_container} bg-slate-50 dark:bg-slate-950  shadow`}>
 			<div className={`${classes.container} mx-auto w-full px-2  sm:px-6 lg:px-8`}>
 				<div className={`${classes.header_content} relative flex h-20 w-full items-center justify-between`}>
 					<div className={`${classes.logo_section} flex flex-1 items-center gap-2`}>

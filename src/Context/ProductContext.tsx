@@ -16,7 +16,7 @@ export const ProductContextProvider: React.FC<{ children: ReactNode }> = ({ chil
 
 	const fetchProducts = useCallback(async () => {
 		try {
-			const response = await fetch(`${API}/api/products/getAllProducts`);
+			const response = await fetch(`${API}api/products/getAllProducts`);
 			if (!response.ok) throw new Error("Failed to fetch products");
 			const data = await response.json();
 			setProducts(data);
@@ -28,7 +28,7 @@ export const ProductContextProvider: React.FC<{ children: ReactNode }> = ({ chil
 
 	const fetchOrders = useCallback(async () => {
 		try {
-			const response = await fetch(`${API}/api/orders/getAllOrders`);
+			const response = await fetch(`${API}api/orders/getAllOrders`);
 			if (!response.ok) throw new Error("Failed to fetch orders");
 			const data = await response.json();
 			setOrders(data);
@@ -40,7 +40,7 @@ export const ProductContextProvider: React.FC<{ children: ReactNode }> = ({ chil
 
 	const fetchDashboard = useCallback(async () => {
 		try {
-			const response = await fetch(`${API}/api/dashboards/getDashboard`);
+			const response = await fetch(`${API}api/dashboards/getDashboard`);
 			if (!response.ok) throw new Error("Failed to fetch dashboard data");
 			const data = await response.json();
 			setDashboard(data);

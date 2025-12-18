@@ -22,7 +22,7 @@ const OrderList: React.FC = () => {
 	const { orders } = useProductContext();
 
 	return (
-		<div className={classes.order}>
+		<div className={`${classes.order} bg-surface-light dark:bg-surface-black p-4 rounded-lg shadow-md transition-colors duration-300`}>
 			<div className={classes.table}>
 				<Table data={orders} />
 			</div>

@@ -1,16 +1,17 @@
 .LoadingComponent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	top: 40%;
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-top: 5px solid rgba(50, 23, 77, 1);
 	border-right: 3px solid transparent;
 	border-bottom: none;
 	border-left: none;
-	animation: loading 700ms linear infinite;
+	animation: loading 700ms ease-in-out infinite;
 }
 
 @keyframes loading {

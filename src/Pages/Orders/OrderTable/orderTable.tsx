@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 import classes from "./table.module.css";
 import Pagination from "@/components/Pagination/Pagination";

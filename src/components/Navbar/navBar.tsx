@@ -48,7 +48,12 @@ const NavBar: React.FC<NavBarProps> = ({ mobileNavOpen, setMobileNavOpen }) => {
 		<>
 			{/* Mobile Backdrop */}
 			{mobileNavOpen && (
-				<div className='fixed inset-0 bg-black/50 z-40 md:hidden' onClick={() => setMobileNavOpen?.(false)} aria-hidden='true' />
+				<div
+					className='fixed inset-0 	bg-slate-50 dark:bg-slate-900 border-r border-slate-400 dark:border-slate-500 z-50
+				transition-colors duration-300md:hidden'
+					onClick={() => setMobileNavOpen?.(false)}
+					aria-hidden='true'
+				/>
 			)}
 
 			<nav

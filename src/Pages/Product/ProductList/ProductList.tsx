@@ -18,7 +18,7 @@ const ProductList: React.FC = () => {
 	const { products } = useProductContext();
 
 	return (
-		<div className={classes.products}>
+		<div className={`${classes.products}  bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-md`}>
 			<div className={classes.table}>
 				<Table data={products} />
 			</div>

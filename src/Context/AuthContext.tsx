@@ -83,7 +83,7 @@ const AuthContextProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 	const logIn = async (credentials: any) => {
 		const { email, password } = credentials;
 		try {
-			const response = await fetch(`${API}/api/users/login`, {
+			const response = await fetch(`${API}api/users/login`, {
 				method: "POST",
 				headers: {
 					"Content-type": "application/json",
@@ -114,7 +114,7 @@ const AuthContextProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 	const signUp = async (credentials: any) => {
 		const { username, email, password } = credentials;
 		try {
-			const response = await fetch(`${API}/api/users/signup`, {
+			const response = await fetch(`${API}api/users/signup`, {
 				method: "POST",
 				headers: { "Content-type": "application/json" },
 				body: JSON.stringify({ username, email, password }),

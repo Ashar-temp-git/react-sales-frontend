@@ -117,13 +117,13 @@ const LineChart: React.FC = () => {
 	};
 
 	return (
-		<div className={`${classes.main_container} bg-zinc-50 dark:bg-zinc-900 rounded-xl shadow-md transition-colors duration-300`}>
+		<div
+			className={`${classes.main_container} bg-zinc-50 dark:bg-zinc-900 rounded-xl shadow-md transition-colors duration-300 overflow-hidden h-full`}
+		>
 			<h5 className='text-2xl pt-2 pl-4 font-semibold  tracking-wider leading-10 text-text-main-light dark:text-text-main-dark font-poppins'>
 				Visitor Insights
 			</h5>
-			<div
-				className={`${classes.Line} text-xl font-poppins font-semibold tracking-wider leading-10 text-text-main-light dark:text-text-main-dark`}
-			>
+			<div className={`${classes.Line}  font-poppins font-semibold tracking-wider  text-text-main-light dark:text-text-main-dark`}>
 				<Line data={chartData} options={option} />
 			</div>
 		</div>

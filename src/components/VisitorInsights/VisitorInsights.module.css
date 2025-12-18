@@ -6,9 +6,9 @@
 }
 
 .Line {
-	width: 95%;
-	height: 100%;
-	margin: 0.3rem;
+	width: 90%;
+	height: 90%;
+	padding-left: 1rem;
 	z-index: 0;
 }
 @media screen and (min-width: 1200px) and (max-width: 1450px) {

@@ -45,7 +45,7 @@ const Table = ({ data }: { data: any[] }) => {
 	) as any;
 
 	return (
-		<div className={classes.table_container}>
+		<div className={`${classes.table_container}  bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-md`}>
 			<table {...getTableProps()}>
 				<thead>
 					{headerGroups.map((headerGroup: any) => (
